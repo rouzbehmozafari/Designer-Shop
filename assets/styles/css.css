@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300&display=swap');
+
+/* General Styles */
+
+
+/* Farbe: #323A45 / #848484 */
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Karla', sans-serif;
+    font-size: 15px;
+    color: #323A45;
+}
+
+body {
+    max-width: 1440px;
+    padding: 2.5% 5%;
+}
+a {
+    color: black;
+}
+
+img {
+    width: 100%;
+}
+
+.bold {
+    font-weight: bold;
+}
+/* Header */
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+nav ul {
+    display: flex;
+}
+
+nav li {
+    margin-left: 20px;
+}
+/* Main */
+main {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.details {
+    display: flex;
+    justify-content: space-between;
+}
+.brand {
+    color: #848484 ;
+}
+
+.full {
+    grid-column: 1/4;
+
+}
+
+.full , .oneThird {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+/* Footer */
+footer {
+    font-size: 12px;
+}
+.fgrid {
+    display: flex;
+    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+    margin: 50px auto;
+}
+.fhead {
+    margin-bottom: 30px;
+}
+.fgrid article {
+    width: 20%;
+    margin-left: 4%;
+}
+
+
+
+
+
+/* Media */
+
+@media screen and (max-width: 800px) {
+   /* styles */
+}
+
