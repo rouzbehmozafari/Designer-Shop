@@ -31,6 +31,11 @@ img {
 
 .bold {
     font-weight: bold;
+    color: black;
+}
+.bold:hover , nav ul a:hover , .name:hover{
+    color: #848484 ;
+    transition: .3s;
 }
 
 .fade {
@@ -44,6 +49,7 @@ nav {
     margin-bottom: 20px;
     margin-top: 20px;
     align-items: center;
+    
 }
 .menu {
     display: none;
@@ -51,20 +57,28 @@ nav {
 nav ul {
     display: flex;
 }
+nav ul a {
+    font-size: 20px; 
 
-
+}
 
 nav li {
     margin-left: 80px;
+
 }
 .name {
     font-weight: bold;
+    font-size: 25px;
 }
 /* Main */
 main {
     display: grid;
     gap: 20px;
     grid-template-columns: 1fr 1fr 1fr;
+}
+main img:hover {
+    opacity: .5;
+    transition: .2s;
 }
 .details {
     display: flex;
@@ -103,6 +117,9 @@ footer {
 .fgrid article {
     margin-right: 10%;
 }
+.social a {
+    display: block;
+}
 .end {
     font-size: 13px;
     font-style: italic;
@@ -118,9 +135,6 @@ footer {
     transform: translateY(-100%);
 }
 
-/* Media */
-/* .navli {
-    visibility: hidden;} */
 
 @media screen and (min-width: 801px) {
     .navli {
