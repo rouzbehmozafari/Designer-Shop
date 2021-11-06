@@ -11,18 +11,25 @@
     <header>
         <nav>
             <a class="name" href="#">THE DESIGN SHOP</a>
-            <div class="menu"><svg viewBox="0 0 100 80" width="40" height="40">
+            <div id="menu" class="menu" onclick="openMenu()"><a href="#" ><svg viewBox="0 0 100 80" width="30" height="30">
                 <rect width="100" height="20"></rect>
                 <rect y="30" width="100" height="20"></rect>
                 <rect y="60" width="100" height="20"></rect>
-              </svg></div>
+              </svg></a></div>
 
-            <ul>
+            <ul >
+                <div></div>
                 <li><a href="">Weekly Recommendations</a></li>
                 <li><a href="">Contact</a></li>
                 <li><a href="">T D B</a></li>
             </ul>
         </nav>
+        <ul id='navli' class="navli">
+            <a href="#" class="close" onclick="closeNav()"><img  src="assets/images/close.png" alt=""></a>
+            <li><a href="">Weekly Recommendations</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">T D B</a></li>
+        </ul>
     </header>
 
     <main>
@@ -31,7 +38,7 @@
             <div class="details">
                 <div class="desc">
                     <p class="boldDesc">Kanken Art Laptop 15" Special Edition Backpack</p>
-                    <p class="brand">Fjallraven</p>
+                    <p class="brand" id="brand">Fjallraven</p>
                 </div>
                 <p class="price">$119.00</p>
             </div>
